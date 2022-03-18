@@ -32,7 +32,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:layout_marginStart="34dp"
+        android:layout_marginStart="50dp"
         android:layout_marginTop="160dp"
         android:text="@string/welcome_"
         android:textColor="@color/yellow"
@@ -46,7 +46,7 @@
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_marginTop="230dp"
-        android:layout_marginStart="38dp"
+        android:layout_marginStart="55dp"
         android:text="@string/know_where_your_bus_is_within_a_minute"
         android:textColor="@color/yellow"
         android:textSize="18sp" />
@@ -126,7 +126,8 @@
         android:layout_alignParentBottom="true"
         android:layout_marginBottom="60dp"
         android:elevation="5dp"
-        android:layout_marginEnd="30dp"/>
+        android:layout_marginEnd="30dp"
+        android:backgroundTint="@color/dark_blue"/>
 
     <Button
         android:id="@+id/nextButton"
