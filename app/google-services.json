@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "727788429493",
+    "project_id": "bus-trail",
+    "storage_bucket": "bus-trail.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:727788429493:android:2e9154c35d0c784ceedefc",
+        "android_client_info": {
+          "package_name": "com.example.bus_trail"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "727788429493-u1qdtga7smqjmveh0v6sor97bdii1i34.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBBpgylk-zWmw7fiRsHwapTdpKCktw6WdY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "727788429493-u1qdtga7smqjmveh0v6sor97bdii1i34.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
