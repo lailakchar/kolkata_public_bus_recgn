@@ -10,6 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Bus_Trail">
         <activity
+            android:name=".Activities.SplashScreen"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.ForgotPassActivity"
+            android:exported="false" />
+        <activity
             android:name=".Activities.SignUpActivity"
             android:exported="false" />
         <activity

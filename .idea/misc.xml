@@ -6,12 +6,15 @@
         <entry key="..\:/Paid_Assignments/Bus_Trail/app/src/main/res/drawable/circle_green.xml" value="0.175" />
         <entry key="..\:/Paid_Assignments/Bus_Trail/app/src/main/res/drawable/circle_half_purple.xml" value="0.175" />
         <entry key="..\:/Paid_Assignments/Bus_Trail/app/src/main/res/drawable/circle_white.xml" value="0.175" />
+        <entry key="..\:/Paid_Assignments/Bus_Trail/app/src/main/res/drawable/line_fillup.xml" value="0.175" />
         <entry key="..\:/Paid_Assignments/Bus_Trail/app/src/main/res/drawable/next.xml" value="0.175" />
         <entry key="..\:/Paid_Assignments/Bus_Trail/app/src/main/res/drawable/next_button.xml" value="0.18" />
         <entry key="..\:/Paid_Assignments/Bus_Trail/app/src/main/res/drawable/next_icon.xml" value="0.175" />
+        <entry key="..\:/Paid_Assignments/Bus_Trail/app/src/main/res/layout/activity_forgot_pass.xml" value="0.22447916666666667" />
         <entry key="..\:/Paid_Assignments/Bus_Trail/app/src/main/res/layout/activity_login.xml" value="0.22447916666666667" />
         <entry key="..\:/Paid_Assignments/Bus_Trail/app/src/main/res/layout/activity_main.xml" value="0.25" />
         <entry key="..\:/Paid_Assignments/Bus_Trail/app/src/main/res/layout/activity_sign_up.xml" value="0.22447916666666667" />
+        <entry key="..\:/Paid_Assignments/Bus_Trail/app/src/main/res/layout/activity_splash_screen.xml" value="0.22447916666666667" />
       </map>
     </option>
   </component>

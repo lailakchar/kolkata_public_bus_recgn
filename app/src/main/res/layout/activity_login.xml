@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/dark_blue"
-    tools:context=".Activities.MainActivity">
+    tools:context=".Activities.LoginActivity">
 
 
     <View
@@ -79,14 +79,18 @@
             android:layout_marginStart="30dp"
             android:layout_marginTop="50dp"
             android:layout_marginEnd="30dp"
-            android:backgroundTint="@color/light_pink"
             android:hint="Email"
+            app:boxStrokeErrorColor="@color/red"
+            android:textColorHint="@color/light_pink"
+            app:boxStrokeColor="@color/light_pink"
             app:boxStrokeWidth="2dp"
+            app:hintTextColor="@color/light_pink"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView">
 
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/email"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
 
@@ -101,6 +105,10 @@
             android:layout_alignParentLeft="true"
             android:layout_alignParentTop="true"
             android:hint="Password"
+            app:boxStrokeErrorColor="@color/red"
+            android:textColorHint="@color/light_pink"
+            app:boxStrokeColor="@color/light_pink"
+            app:hintTextColor="@color/light_pink"
             app:boxStrokeWidth="2dp"
             android:layout_marginTop="20dp"
             android:layout_marginStart="30dp"
@@ -110,12 +118,13 @@
             app:layout_constraintTop_toBottomOf="@+id/textInputLayout">
 
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/pass"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <TextView
-            android:id="@+id/textView3"
+            android:id="@+id/forgotPass"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentRight="true"
@@ -130,6 +139,7 @@
             app:layout_constraintTop_toBottomOf="@+id/passwordInputLayout" />
 
         <Button
+            android:id="@+id/btnLogIn"
             android:layout_width="130dp"
             android:layout_height="56dp"
             android:layout_below="@+id/passwordInputLayout"
@@ -147,6 +157,7 @@
             app:layout_constraintTop_toBottomOf="@+id/passwordInputLayout" />
 
         <TextView
+            android:id="@+id/toSignUp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentTop="true"
@@ -158,6 +169,17 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent" />
+
+        <ProgressBar
+            android:id="@+id/progressbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
