@@ -13,4 +13,7 @@
     <color name="light_pink">#FFEBEB</color>
     <color name="yellow">#FFF8D2</color>
     <color name="red">#FFF8D2</color>
+    <color name="subtle_red">#FF6F6F</color>
+    <color name="bright_green">#A5FF5F </color>
+    <color name="off_white">#DFCBFF</color>
 </resources>
