@@ -76,7 +76,7 @@ public class LoginActivity extends AppCompatActivity {
                         {
                             if (firebaseAuth.getCurrentUser().isEmailVerified())
                             {
-                                Intent myIntent = new Intent(getApplicationContext(), ForgotPassActivity.class);
+                                Intent myIntent = new Intent(getApplicationContext(), ShowBusLocation.class);
                                 startActivity(myIntent);
                                 finish();
                             }

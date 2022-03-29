@@ -1,6 +1,7 @@
 {
   "project_info": {
     "project_number": "727788429493",
+    "firebase_url": "https://bus-trail-default-rtdb.asia-southeast1.firebasedatabase.app",
     "project_id": "bus-trail",
     "storage_bucket": "bus-trail.appspot.com"
   },
