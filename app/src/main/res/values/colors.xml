@@ -12,9 +12,13 @@
     <color name="purple">#DFCBFF</color>
     <color name="light_pink">#FFEBEB</color>
     <color name="yellow">#FFF8D2</color>
-    <color name="red">#FFF8D2</color>
+    <color name="red">#e52c28</color>
     <color name="subtle_red">#FF6F6F</color>
     <color name="bright_green">#A5FF5F </color>
     <color name="off_white">#DFCBFF</color>
+    <color name="navbar_dark_blue">#080E3E</color>
+    <color name="deep_gray">#6c7299</color>
+    <color name="transparent">#0000ffff</color>
+    <color name="light_gray">#F5F5F5</color>
 </resources>
 

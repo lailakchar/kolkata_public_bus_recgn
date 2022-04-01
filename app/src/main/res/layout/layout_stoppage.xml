@@ -5,28 +5,38 @@
     android:id="@+id/parentLayout"
     android:layout_width="match_parent"
     android:layout_height="70dp"
-    android:background="@color/dark_blue">
+    android:background="@color/navbar_dark_blue">
 
 
     <View
-        android:id="@+id/view3"
+        android:id="@+id/lineup"
         android:layout_width="5dp"
-        android:layout_height="0dp"
+        android:layout_height="15dp"
         android:background="@color/off_white"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/status"
+        app:layout_constraintStart_toStartOf="@+id/status" />
+
+
+    <View
+        android:id="@+id/linedown"
+        android:layout_width="5dp"
+        android:layout_height="15dp"
+        android:background="@color/off_white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/status"
+        app:layout_constraintStart_toStartOf="@+id/status"/>
+
+
+    <View
+        android:id="@+id/status"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:background="@drawable/red_circle"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.1"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <View
-        android:id="@+id/status"
-        android:layout_width="20dp"
-        android:layout_height="20dp"
-        android:background="@drawable/red_circle"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/view3"
-        app:layout_constraintStart_toStartOf="@+id/view3"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
@@ -36,31 +46,23 @@
         android:layout_marginStart="25dp"
         android:text="Shapoorji"
         android:textColor="@color/light_pink"
-        android:textSize="20sp"
+        android:textSize="23sp"
         app:layout_constraintBottom_toBottomOf="@+id/status"
-        app:layout_constraintStart_toEndOf="@+id/view3"
+        app:layout_constraintStart_toEndOf="@+id/status"
         app:layout_constraintTop_toTopOf="@+id/status" />
 
     <TextView
         android:id="@+id/last_spotted"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        app:layout_constraintHorizontal_bias="0.15"
+        android:text="13:40"
         android:textColor="@color/light_pink"
-        android:textSize="15sp"
+        android:textSize="20sp"
         android:visibility="gone"
-        android:layout_marginTop="2dp"
-        app:layout_constraintStart_toStartOf="@+id/stopage_name"
-        app:layout_constraintTop_toBottomOf="@+id/stopage_name"
-        android:layout_marginStart="10dp"/>
-
-    <View
-        android:id="@+id/bus_icon"
-        android:visibility="gone"
-        android:layout_width="35dp"
-        android:layout_height="35dp"
-        android:background="@drawable/bus"
-        app:layout_constraintEnd_toEndOf="@+id/status"
-        app:layout_constraintStart_toStartOf="@+id/status"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintBottom_toBottomOf="@+id/stopage_name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/stopage_name"
+        app:layout_constraintTop_toTopOf="@+id/stopage_name" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -56,6 +56,16 @@ public class SessionManager {
         return userSession.getBoolean(KEY_FIRST_TIME,true);
     }
 
+    public void setLogin(Boolean b) {
+        editor = userSession.edit();
+        editor.putBoolean(IS_LOGIN,b);
+        editor.apply();
+    }
+
+    public boolean isLogin() {
+        return userSession.getBoolean(IS_LOGIN,false);
+    }
+
     // For Notification
     public void setToken(String token){
         editor = userSession.edit();

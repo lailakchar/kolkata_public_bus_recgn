@@ -1,7 +1,5 @@
 package com.example.bus_trail.Models;
 
-import com.example.bus_trail.Adapters.StoppageAdapter;
-
 import java.util.Comparator;
 
 public class StoppageModel {

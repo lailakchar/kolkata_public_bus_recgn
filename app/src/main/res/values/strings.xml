@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Bus_Trail</string>
+    <string name="app_name">Bus Trail</string>
     <string name="welcome_">Welcome!</string>
     <string name="know_where_your_bus_is_within_a_minute">Know where your bus is within a minute.</string>
 </resources>

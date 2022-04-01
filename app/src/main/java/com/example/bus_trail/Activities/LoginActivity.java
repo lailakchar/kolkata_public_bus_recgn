@@ -4,21 +4,27 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.net.Uri;
+import android.os.Build;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.util.Patterns;
 import android.view.View;
+import android.view.Window;
+import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.bus_trail.Helper_Classes.SessionManager;
 import com.example.bus_trail.R;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.android.material.textfield.TextInputEditText;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.UserProfileChangeRequest;
 
 public class LoginActivity extends AppCompatActivity {
 
@@ -27,10 +33,19 @@ public class LoginActivity extends AppCompatActivity {
     TextInputEditText email,pass;
     ProgressBar progressBar;
     FirebaseAuth firebaseAuth;
+    SessionManager sessionManager;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        if (Build.VERSION.SDK_INT >= 21) {
+            Window window = this.getWindow();
+            window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
+            window.clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
+            window.setStatusBarColor(this.getResources().getColor(R.color.dark_blue));
+        }
+
         setContentView(R.layout.activity_login);
 
         toSignup = findViewById(R.id.toSignUp);
@@ -40,6 +55,9 @@ public class LoginActivity extends AppCompatActivity {
         pass = findViewById(R.id.pass);
         firebaseAuth = FirebaseAuth.getInstance();
         progressBar = findViewById(R.id.progressbar);
+
+        sessionManager = new SessionManager(getApplicationContext(),SessionManager.TYPE_LOGINSESSION);
+
 
 
         toSignup.setOnClickListener(new View.OnClickListener() {
@@ -54,7 +72,6 @@ public class LoginActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(getApplicationContext(),ForgotPassActivity.class));
-                finish();
             }
         });
 
@@ -76,6 +93,9 @@ public class LoginActivity extends AppCompatActivity {
                         {
                             if (firebaseAuth.getCurrentUser().isEmailVerified())
                             {
+                                sessionManager.setLogin(true);
+
+                                Toast.makeText(LoginActivity.this, Boolean.toString(sessionManager.isLogin()), Toast.LENGTH_SHORT).show();
                                 Intent myIntent = new Intent(getApplicationContext(), ShowBusLocation.class);
                                 startActivity(myIntent);
                                 finish();

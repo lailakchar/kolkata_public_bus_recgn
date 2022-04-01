@@ -1,34 +1,34 @@
 {
   "project_info": {
-    "project_number": "727788429493",
-    "firebase_url": "https://bus-trail-default-rtdb.asia-southeast1.firebasedatabase.app",
-    "project_id": "bus-trail",
-    "storage_bucket": "bus-trail.appspot.com"
+    "project_number": "953602353719",
+    "firebase_url": "https://bus-trail-36370-default-rtdb.firebaseio.com",
+    "project_id": "bus-trail-36370",
+    "storage_bucket": "bus-trail-36370.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:727788429493:android:2e9154c35d0c784ceedefc",
+        "mobilesdk_app_id": "1:953602353719:android:df9b2d030429adf070adb2",
         "android_client_info": {
           "package_name": "com.example.bus_trail"
         }
       },
       "oauth_client": [
         {
-          "client_id": "727788429493-u1qdtga7smqjmveh0v6sor97bdii1i34.apps.googleusercontent.com",
+          "client_id": "953602353719-6ijvf7sqq7g54q744obcpek2ic76bh3g.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyBBpgylk-zWmw7fiRsHwapTdpKCktw6WdY"
+          "current_key": "AIzaSyBH2a5-P4tUHxTexCJvCBJYjgIPMPjjyY0"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "727788429493-u1qdtga7smqjmveh0v6sor97bdii1i34.apps.googleusercontent.com",
+              "client_id": "953602353719-6ijvf7sqq7g54q744obcpek2ic76bh3g.apps.googleusercontent.com",
               "client_type": 3
             }
           ]
